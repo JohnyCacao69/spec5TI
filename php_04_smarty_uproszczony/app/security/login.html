@@ -1,0 +1,45 @@
+
+{extends file="../../templates/main.html"}
+
+{block name=footer}przykładowa tresć stopki wpisana do szablonu głównego z szablonu kalkulatora{/block}
+
+{block name=content}
+
+
+
+<div style="width:90%; margin: 2em auto;">
+
+
+<form action="{$app_url}/app/security/login.php" method="post" class="pure-form pure-form-stacked">
+	<legend>Logowanie</legend>
+	<fieldset>
+		<label for="login">login: </label>
+		<input id="login" type="text" name="login" />
+		<label for="pass">pass: </label>
+		<input id="pass" type="password" name="pass" />
+	</fieldset>
+	<button type="submit"class="pure-button pure-button-primary">Zaloguj</button>
+</form>	
+</div>
+<div class="messages">
+
+{* wyświeltenie listy błędów, jeśli istnieją *}
+{if isset($messages)}
+	{if count($messages) > 0} 
+		<h4>Wystąpiły błędy: </h4>
+		<ol class="err">
+		{foreach  $messages as $msg}
+		{strip}
+			<li>{$msg}</li>
+		{/strip}
+		{/foreach}
+		</ol>
+	{/if}
+{/if}
+
+
+
+
+</div>
+
+{/block}
