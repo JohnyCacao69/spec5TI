@@ -1,0 +1,129 @@
+/* Apply dark mode styles for the first set of HTML content */
+body {
+  background-color: grey;
+  color: #fff;
+}
+
+a.pure-button {
+  background-color: #444;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+a.pure-button:hover {
+  background-color: #555;
+}
+
+a.pure-button-active {
+  background-color: #1cb495;
+}
+
+input[type="number"],
+input[type="tekst"] {
+  background-color: #444;
+  color: #fff;
+  padding: 0.5em;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #1cb495;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0f906e;
+}
+
+ol {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f88;
+  width: 400px;
+}
+
+ol li {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+div[style*="margin: 20px"] {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+/* Apply dark mode styles for the second set of HTML content */
+form {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+legend {
+  color: #1cb495;
+  font-weight: bold;
+}
+
+label {
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #555;
+  color: #fff;
+  padding: 0.5em;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Specific styles for the dark mode */
+input[type="submit"] {
+  background-color: #1cb495;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0f906e;
+}
+
+ol {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f88;
+  width: 400px;
+}
+
+ol li {
+  color: #fff;
+  margin-bottom: 5px;
+}
+.header , .footer , .content{
+  margin: 1em auto;
+  border: 0.01em solid #aaa;
+  border-radius: 1em;
+  padding: 1em;
+  background: black;
+  box-shadow: 0.2em 0.2em 0.4em grey;
+}
+.header , .footer{
+  text-align: center;
+}
